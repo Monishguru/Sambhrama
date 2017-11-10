@@ -3,12 +3,12 @@
 <head>
 <title>Sambhrama Trust</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.6.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.min.js"></script>    
 <script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/cufon-replace.js"></script>
 <script type="text/javascript" src="js/Vegur_700.font.js"></script>
@@ -40,7 +40,7 @@
           </ul>
         </nav>
         <nav>
-          <ul id="menu">
+            <ul id="menu">
             <li id="menu_active"><a href="index.html">Home</a></li>
             <li><a href="mission.html">Our Mission</a></li>
             <li><a href="news.html">News &amp; Press</a></li>
@@ -89,7 +89,7 @@
                 <div class="pad_bot1">
                   <figure><img src="images/page1_img1.jpg" alt=""></figure>
                 </div>
-                Sambhrama trust is taken care by budding engineers and doctors in welfare of society<a href="#" class="btn btn-details bt-wrp" data-toggle="modal" data-target="#story-of-the-day">Read More</a> </section>
+                Sambhrama trust is taken care by budding engineers and doctors in welfare of society<a href="#" class="button1 color1" data-toggle="modal" data-target="#story-of-the-day">Read More</a> </section>
               <section class="col1 pad_left1">
                 <h2 class="color2"><strong>T</strong>rue<span>Story 2</span></h2>
                 <div class="pad_bot1">
@@ -156,17 +156,18 @@
         </nav>
         <div class="tel"><span>+1 800</span>123 45 67</div>
       </div>
-      <div id="footer_text">Copyright &copy; <a href="#">Domain Name</a> All Rights Reserved<br>
-        Design by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></div>
+      <div id="footer_text">Copyright &copy; <a href="#">sambhramatrust.org</a> All Rights Reserved<br>
+        Design by <a target="_blank" href="http://www.sambhramatrust.org/">TemplateMonster.com</a></div>
     </footer>
     <!-- / footer -->
   </div>
 </div>
 
+<!-- HTML NEEDED FOR THE IMPORTANT MESSAGE MODAL POPUP -->
 
 <!-- Modal For pop-up for Story of the day Start here-->
-
- <div class="modal-dialog modal-lg">
+    <div class="modal fade" id="story-of-the-day" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -175,9 +176,9 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-md-12">         
-                <P>"I am the link between him and the world. My brother can’t hear or speak. I often sit with him during his classes to make him understand what the teacher teaches. And also let others know what he wants to convey. But most of the time, when I am not able to be with him, he gets bullied or laughed at by other children. One day, he was pushed by a senior. My brother didn’t get offended. When the school got over, he went to the senior and smiled at him. Then he gave him a hug. He made a connection. Nobody taught him about anything like this. It was his own thought."</p>
-                
-                <p>- Adarsh's Sister</p>
+                <P>"My father has borrowed this uniform for me from his employers. He works as a daily wager and doesn’t earn too much money. He never had a thought of sending me to school. It was me who kept on begging him day and night to send me to school. I wanted to be like other children who dressed in their uniforms go to school every day. Although the shoes are torn, I am happy that my father has fulfilled all my wishes. I go to school too."</p>
+                <P>"My father has borrowed this uniform for me from his employers. He works as a daily wager and doesn’t earn too much money. He never had a thought of sending me to school. It was me who kept on begging him day and night to send me to school. I wanted to be like other children who dressed in their uniforms go to school every day. Although the shoes are torn, I am happy that my father has fulfilled all my wishes. I go to school too."</P>
+                <p>- Monish</p>
                                                                   
               </div>
               
@@ -191,14 +192,18 @@
     </div>
     <!-- Modal For pop-up for Story OF the Day end here-->
 
+
+<!-- END HTML NEEDED FOR THE IMPORTANT MESSAGE MODAL POPUP -->
+
 <script type="text/javascript">Cufon.now();</script>
+  
 <script type="text/javascript">
-$(window).load(function () {
+$(window).on('load',function () {
     $('.slider')._TMS({
         preset: 'zabor',
         easing: 'easeOutQuad',
         duration: 800,
-        pagination: true,
+        //pagination: true,
         banners: true,
         waitBannerAnimation: false,
         slideshow: 6000,
@@ -236,5 +241,7 @@ $(window).load(function () {
     })
 })
 </script>
+
+
 </body>
 </html>
